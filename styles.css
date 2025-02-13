@@ -1,0 +1,159 @@
+/* Basic styling for the navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;         /* Sticky position : Navigation/Menu Bar sticks to the top of the page as you scroll. */
+  top: 0;
+  font-size: 25px;
+  z-index:10;
+}
+
+li {
+  display: inline; /* Makes the list items appear side by side */
+}
+
+li a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+li a:hover {                /* Hover : when hovered over one of the links in the navigation bar, it changes color. */
+  background-color: #111;
+}
+
+.active {                      /* Displays the active webpage in a different color. */
+  background-color: #04AA6D;
+}
+
+/* Styling for the container */
+.container {
+  margin-top: 0; /* No extra space between the navbar and content */
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Staatliches', sans-serif;
+  color: #333;
+  font-size: 100px;
+}
+
+h2 {
+  font-family: 'Staatliches', sans-serif;
+  color: #555;
+  font-size: 45px;
+}
+p {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+li {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Basic styling for navbar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;         /* Sticky position : Navigation/Menu Bar sticks to the top of the page as you scroll. */
+  top: 0;
+  font-size: 25px;
+}
+
+.navbar li {
+  display: inline; /* Makes the list items appear side by side */
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar a {
+  padding: 10px;
+  border: 2px solid transparent;
+  transition: padding 0.3s ease, border-color 0.3s ease;
+}
+
+/* Enlarge the link box on hover */
+.navbar li:hover {
+  transform: scale(1.2); /* Enlarge the list item */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for effect */
+}
+
+.navbar li:hover a {
+  padding: 12px 20px; /* Enlarge the padding on hover */
+}
+.gallery {
+    position: relative;     /* Ensures proper stacking of images */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 50px; /* Space between images */
+    max-width: 95%; /* Adjust width if needed */
+    margin: auto;
+    z-index:5;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    z-index:1;
+}
+/* Enlarge the image on hover */
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.players {
+    position: relative;     /* Ensures proper stacking of images */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 50px; /* Space between images */
+    max-width: 95%; /* Adjust width if needed */
+    margin: auto;
+    z-index:5;
+}
+
+.players img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    z-index:1;
+}
+/* Enlarge the image on hover */
+.players img:hover {
+    transform: scale(1.1);
+}
+.Clubs {
+    position: relative;     /* Ensures proper stacking of images */
+    display: flex;
+    max-width: 90%; /* Adjust width if needed */
+    margin: auto;
+    z-index:5;
+}
+
+.Clubs img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    z-index:1;
+}
+/* Enlarge the image on hover */
+.Clubs img:hover {
+    transform: scale(1.1);
+}
